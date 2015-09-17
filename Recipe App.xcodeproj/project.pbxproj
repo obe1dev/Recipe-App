@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4796E7BC1BAB438900B3F05B /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4796E7BB1BAB438900B3F05B /* FavoriteViewController.m */; settings = {ASSET_TAGS = (); }; };
 		71F67B51192C8D6A00E609F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F67B50192C8D6A00E609F1 /* Foundation.framework */; };
 		71F67B53192C8D6A00E609F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F67B52192C8D6A00E609F1 /* CoreGraphics.framework */; };
 		71F67B55192C8D6A00E609F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F67B54192C8D6A00E609F1 /* UIKit.framework */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4796E7BA1BAB438900B3F05B /* FavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteViewController.h; sourceTree = "<group>"; };
+		4796E7BB1BAB438900B3F05B /* FavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteViewController.m; sourceTree = "<group>"; };
 		71F67B4D192C8D6A00E609F1 /* Recipe App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F67B50192C8D6A00E609F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		71F67B52192C8D6A00E609F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,6 +80,8 @@
 		71F67B44192C8D6A00E609F1 = {
 			isa = PBXGroup;
 			children = (
+				4796E7BA1BAB438900B3F05B /* FavoriteViewController.h */,
+				4796E7BB1BAB438900B3F05B /* FavoriteViewController.m */,
 				71F67B56192C8D6A00E609F1 /* Recipe App */,
 				71F67B6F192C8D6A00E609F1 /* Recipe AppTests */,
 				71F67B4F192C8D6A00E609F1 /* Frameworks */,
@@ -189,7 +194,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RA;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = DevMountain;
 				TargetAttributes = {
 					71F67B67192C8D6A00E609F1 = {
@@ -240,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4796E7BC1BAB438900B3F05B /* FavoriteViewController.m in Sources */,
 				71F67B5D192C8D6A00E609F1 /* main.m in Sources */,
 				71F67B61192C8D6A00E609F1 /* RAAppDelegate.m in Sources */,
 			);
@@ -301,6 +307,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -361,6 +368,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Recipe App/Recipe App-Prefix.pch";
 				INFOPLIST_FILE = "Recipe App/Recipe App-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devmountain.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -374,6 +382,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Recipe App/Recipe App-Prefix.pch";
 				INFOPLIST_FILE = "Recipe App/Recipe App-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devmountain.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,6 +404,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Recipe AppTests/Recipe AppTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devmountain.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -413,6 +423,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Recipe App/Recipe App-Prefix.pch";
 				INFOPLIST_FILE = "Recipe AppTests/Recipe AppTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devmountain.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -438,6 +449,7 @@
 				71F67B7B192C8D6A00E609F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71F67B7C192C8D6A00E609F1 /* Build configuration list for PBXNativeTarget "Recipe AppTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +458,7 @@
 				71F67B7E192C8D6A00E609F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

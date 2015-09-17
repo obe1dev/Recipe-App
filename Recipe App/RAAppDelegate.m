@@ -7,6 +7,7 @@
 //
 
 #import "RAAppDelegate.h"
+#import "FavoriteViewController.h"
 
 @implementation RAAppDelegate
 
@@ -14,6 +15,18 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    
+    FavoriteViewController *rootViewController = [[FavoriteViewController alloc]init];
+    
+    
+    //add navigation bar window
+    UINavigationController *naviagtionController = [[UINavigationController alloc]initWithRootViewController:rootViewController];
+    
+    self.window.rootViewController = naviagtionController;
+    
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
