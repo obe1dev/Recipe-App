@@ -7,7 +7,10 @@
 //
 
 #import "FavoriteViewController.h"
+#import "recipes.h"
 
+
+//add UITableViewDataSource protocol provides data source for the tabel view
 @interface FavoriteViewController ()<UITableViewDataSource>
 
 @end
@@ -17,40 +20,48 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UITableView *tabelView = [[UITableView alloc]initWithFrame:self.view.frame];
-    tabelView.dataSource = self;
+    
+    //make tabel view and set the frame size
+    UITableView *tableView = [UITableView new];
+    tableView.frame = self.view.frame;
     
     
-    [self.view addSubview:tabelView];
+    //setting the data source
+    tableView.dataSource = self;
+    
+    //adding the tabelVeiw to the view.
+    [self.view addSubview:tableView];
     
     
     
 }
 
-
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    //dequeuing cell in tabel view
+    [tableView dequeueReusableCellWithIdentifier:@"CELLID"];
+    
+    return [recipes count];
+}
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [UITableViewCell new];
-    cell.textLabel.text = [self favoriteThings][indexPath.row];
     
-    //register cell
-    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell Id"]
+    
+    // creating table view cell and adding a subtitle to it.
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellID"];
+    
+    
+    // setting the title and subtitles in the cell.
+    cell.textLabel.text = [recipes titleAtIndex:indexPath.row];
+    cell.detailTextLabel.text = [recipes descriptionAtIndex:indexPath.row];
+    
+    // register cell in tabel view to be reused after dequeued;
+    [tableView registerClass:[UITableViewCell class]  forCellReuseIdentifier:@"CELLID"];
     
     return cell;
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    
-    //dequeue the cell
-    [tableView dequeueReusableCellWithIdentifier:@"Cell Id"];
-    
-    return [self favoriteThings].count;
-}
 
--(NSArray *) favoriteThings{
-    return @[@"Family",@"computers",@"cars",@"outside",@"money"];
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

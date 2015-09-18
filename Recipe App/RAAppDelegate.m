@@ -9,26 +9,30 @@
 #import "RAAppDelegate.h"
 #import "FavoriteViewController.h"
 
+
 @implementation RAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    
-    
-    FavoriteViewController *rootViewController = [[FavoriteViewController alloc]init];
-    
-    
-    //add navigation bar window
-    UINavigationController *naviagtionController = [[UINavigationController alloc]initWithRootViewController:rootViewController];
-    
-    self.window.rootViewController = naviagtionController;
-    
-    
-    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    //makeing a nav controller and setting it to the rootViewController
+    FavoriteViewController *viewController = [FavoriteViewController new];
+    UINavigationController * navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    
+    //setting the tltle for the view controller.
+    viewController.title = @"Recipes";
+    
+    
+    //making navController the rootView
+    self.window.rootViewController = navController;
+    
+    
+    
     return YES;
 }
 
