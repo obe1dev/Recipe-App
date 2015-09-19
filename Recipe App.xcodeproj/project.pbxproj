@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4796E7BC1BAB438900B3F05B /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4796E7BB1BAB438900B3F05B /* FavoriteViewController.m */; settings = {ASSET_TAGS = (); }; };
-		4796E8011BAC7CF900B3F05B /* recipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 4796E8001BAC7CF900B3F05B /* recipes.m */; settings = {ASSET_TAGS = (); }; };
-		47D80D821BADD3F4008B2E6E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80D811BADD3F4008B2E6E /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4796E7BC1BAB438900B3F05B /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4796E7BB1BAB438900B3F05B /* FavoriteViewController.m */; };
+		4796E8011BAC7CF900B3F05B /* recipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 4796E8001BAC7CF900B3F05B /* recipes.m */; };
+		47D80D821BADD3F4008B2E6E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D80D811BADD3F4008B2E6E /* DetailViewController.m */; };
 		71F67B51192C8D6A00E609F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F67B50192C8D6A00E609F1 /* Foundation.framework */; };
 		71F67B53192C8D6A00E609F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F67B52192C8D6A00E609F1 /* CoreGraphics.framework */; };
 		71F67B55192C8D6A00E609F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F67B54192C8D6A00E609F1 /* UIKit.framework */; };
@@ -116,14 +116,14 @@
 		71F67B56192C8D6A00E609F1 /* Recipe App */ = {
 			isa = PBXGroup;
 			children = (
+				71F67B5F192C8D6A00E609F1 /* RAAppDelegate.h */,
+				71F67B60192C8D6A00E609F1 /* RAAppDelegate.m */,
 				4796E7BA1BAB438900B3F05B /* FavoriteViewController.h */,
 				4796E7BB1BAB438900B3F05B /* FavoriteViewController.m */,
 				47D80D801BADD3F4008B2E6E /* DetailViewController.h */,
 				47D80D811BADD3F4008B2E6E /* DetailViewController.m */,
 				4796E7FF1BAC7CF900B3F05B /* recipes.h */,
 				4796E8001BAC7CF900B3F05B /* recipes.m */,
-				71F67B5F192C8D6A00E609F1 /* RAAppDelegate.h */,
-				71F67B60192C8D6A00E609F1 /* RAAppDelegate.m */,
 				71F67B62192C8D6A00E609F1 /* Images.xcassets */,
 				71F67B57192C8D6A00E609F1 /* Supporting Files */,
 			);
