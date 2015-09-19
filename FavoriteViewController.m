@@ -76,6 +76,8 @@ static NSString * const cellID = @"cellID";
     
     detailView.name = [recipes titleAtIndex:indexPath.row];
     
+    
+    
     //push to the detail view
     [self.navigationController pushViewController:detailView animated:YES];
     

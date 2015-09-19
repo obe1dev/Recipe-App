@@ -56,8 +56,11 @@ static CGFloat margin = 15;
     directionsLabel.font = [UIFont boldSystemFontOfSize:17];
     [scrollView addSubview:directionsLabel];
 
-    
+    [recipes di]
 }
+
+
+
 
 - (CGFloat)heightForDescription:(NSString *)description {
     
