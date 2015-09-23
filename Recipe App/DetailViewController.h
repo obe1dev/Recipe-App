@@ -11,6 +11,6 @@
 @interface DetailViewController : UIViewController
 
 @property (nonatomic, weak) NSString * name;
-@property (nonatomic, assign) NSInteger * recipeIndex;
+@property (nonatomic, assign) NSInteger recipeIndex;
 
 @end

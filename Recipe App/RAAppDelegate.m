@@ -26,7 +26,7 @@
     
     //setting the tltle for the view controller.
     viewController.title = @"Recipes";
-    
+
     
     //making navController the rootView
     self.window.rootViewController = navController;

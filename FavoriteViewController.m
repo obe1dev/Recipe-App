@@ -65,6 +65,7 @@ static NSString * const cellID = @"cellID";
     cell.detailTextLabel.text = [recipes descriptionAtIndex:indexPath.row];
     
     
+    
     return cell;
 }
 
@@ -74,7 +75,8 @@ static NSString * const cellID = @"cellID";
     
     DetailViewController *detailView = [DetailViewController new];
     
-    detailView.name = [recipes titleAtIndex:indexPath.row];
+    //detailView.name = [recipes titleAtIndex:indexPath.row];
+    detailView.recipeIndex = indexPath.row;
     
     
     
